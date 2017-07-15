@@ -1,10 +1,57 @@
 {% extends 'layout.html' %}
+{% block head %}
+
+<script type="text/javascript" src="/static/js/get_parameters.js"></script>
+{% endblock %}
+
 {% block body %}
 
-<div class="jumbotron text-center">
-    <h2>My Flask App v.1</h2>
-    <p>This is my first flask app</p>
+<div class="row">
+
+    <div class="ui two wide column"></div>
+
+    <div class="ui center aligned twelve wide column">
+        <div class="row">
+            <h1>Here I want to have my first feature</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto asperiores at autem
+            debitis,
+            doloribus dolorum facilis fuga iure magni molestiae molestias omnis porro qui reiciendis suscipit tempora
+            tenetur velit!
+        </div>
+        <div class="ui hidden divider"></div>
+        <div class="row">
+            <input class="ui green button" type="button" value="Run" onclick="get_throughput()"/>
+        </div>
+    </div>
+
+    <div class="ui two wide column"></div>
 </div>
 
+<div class="ui divider"></div>
+
+
+<div class="row">
+    <div class="ui two wide column"></div>
+    <div class="ui six wide column">
+        <h1>Here is the parameters for the feature</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto asperiores at autem
+            debitis,
+            doloribus dolorum facilis fuga iure magni molestiae molestias omnis porro qui reiciendis suscipit tempora
+            tenetur velit!
+        </p>
+    </div>
+
+    <div class="ui two wide column"></div>
+    <div class="ui six wide column">
+        <form action="" name="first_form">
+            <div class="ui hidden divider"></div>
+
+            {% include 'includes/_parameters.html' %}
+
+        </form>
+    </div>
+
+</div>
 
 {% endblock %}
