@@ -1,16 +1,18 @@
-from flask import Flask, render_template
-
+from flask import Flask, render_template, json
+import data
 app = Flask(__name__)
 
 
 @app.route('/')
 def index():
+
     return render_template('home.html')
 
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    about = 'Albin Sundqvist made this'
+    return render_template('about.html', about=about)
 
 @app.route('/features')
 def features():
@@ -18,4 +20,5 @@ def features():
 
 
 if __name__ == '__main__':
+    some_data = data.get_some_data()
     app.run(debug=True)
