@@ -40,25 +40,29 @@
             doloribus dolorum facilis fuga iure magni molestiae molestias omnis porro qui reiciendis suscipit tempora
             tenetur velit!
         </p>
-        <div class="ui shape">
-            <div class="sides">
-                <div class="active side">This side starts visible.</div>
-                <div class="side">This is yet another side</div>
-                <div class="side">This is the last side</div>
+        <div class="ui styled fluid accordion">
+            <div class="title">
+                <i class="dropdown icon"></i>
+                What is a dog?
+            </div>
+            <div class="content">
+                <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a
+                    welcome guest in many households across the world.</p>
+
             </div>
         </div>
-
     </div>
 
-    <div class="ui two wide column"></div>
-    <div class="ui six wide column">
-        <form action="" name="first_form">
+            <div class="ui two wide column"></div>
+            <div class="ui six wide column">
+                <form action="" name="first_form">
 
-            {% include 'includes/_parameters.html' %}
+                    {% include 'includes/_parameters.html' %}
 
-        </form>
-    </div>
+                </form>
+            </div>
 
-</div>
+        </div>
 
-{% endblock %}
+        {% endblock %}
+

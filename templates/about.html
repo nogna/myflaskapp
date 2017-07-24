@@ -6,8 +6,27 @@
         <div class="row">
             <h1>{{ about }}</h1>
 
+            <img src="static/images/rogie_small.png" class="dude transition hidden">
+
         </div>
 
-</div>
 
+    </div>
+
+</div>
+{% endblock %}
+
+
+{% block script %}
+<script>
+$('.dude')
+  .transition({
+  animation: 'fade',
+  duration: '2s'
+  })
+;
+
+
+
+</script>
 {% endblock %}

@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Feature!!</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/components/rating.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/components/rating.min.css"/>
     {% block head %}
 
     {% endblock %}
@@ -21,6 +25,16 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/components/rating.js" integrity="sha256-NJbPAkPQdrqAv1Gre1ehTDuGrgJS/CynRg6wAb2obvI=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/components/rating.js"
+        integrity="sha256-NJbPAkPQdrqAv1Gre1ehTDuGrgJS/CynRg6wAb2obvI=" crossorigin="anonymous"></script>
+
+<script>
+$('.ui.accordion')
+  .accordion()
+;
+</script>
+{% block script %}
+
+{% endblock %}
 </body>
 </html>
